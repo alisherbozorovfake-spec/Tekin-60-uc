@@ -32,7 +32,7 @@ async def start(msg: types.Message):
         await msg.answer("❗ Botdan foydalanish uchun kanalga obuna bo‘ling:", reply_markup=btn)
         return
 
-    await msg.answer("🎰 Random botga xush kelibsiz!\n\n🎁 Kuniga 3 marta aylantira olasiz.")
+    await msg.answer("🎰 Random botga xush kelibsiz!\n\n🎁 Kuniga 3 marta aylantira olasiz va 3 marta ketma ket tushsa sovrinni olasiz.")
 
 @dp.message_handler(commands=["spin"])
 async def spin(msg: types.Message):
